@@ -9,22 +9,26 @@
 import UIKit
 
 class NumberedViewController: UIViewController {
-
+    let label = UILabel(frame: CGRect(x: 0, y: 0, width: 160, height: 80))
+//grabbing a label object,
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view.addSubview(label)
+        //draggin onto canvas.
+        label.textColor = .white
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 64)
+        label.center = view.center
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let number = navigationController?.viewControllers.count {
+            label.text = String(number)
+        }
     }
-    */
-
+    @IBAction func doneButtonTapped(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
 }

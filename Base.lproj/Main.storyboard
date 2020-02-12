@@ -7,30 +7,40 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--White-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="screens_iOS_" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="ndH-Of-noQ"/>
-                    <connections>
-                        <segue destination="lye-T2-wh7" kind="show" id="NE9-ZR-fbH"/>
-                    </connections>
+                    <view key="view" contentMode="scaleToFill" id="9io-di-Z57">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6If-Mk-M0n"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="White" id="ndH-Of-noQ">
+                        <barButtonItem key="rightBarButtonItem" title="Gray" id="xhM-2w-vyP">
+                            <connections>
+                                <segue destination="lye-T2-wh7" kind="show" id="bBv-cu-ofF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1886.9565217391305" y="89.732142857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Gray-->
         <scene sceneID="9UL-JH-gzM">
             <objects>
                 <viewController id="lye-T2-wh7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="146-H1-P7j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="bEt-DZ-e21"/>
                     </view>
-                    <navigationItem key="navigationItem" id="SjJ-Wt-mn7"/>
+                    <navigationItem key="navigationItem" title="Gray" id="SjJ-Wt-mn7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6S3-8j-xrY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

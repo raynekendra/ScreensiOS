@@ -16,15 +16,12 @@ class RedViewController: NumberedViewController {
         // Do any additional setup after loading the view.
     }
     
+    //Unwind Segue
+    // Create IBAction with UIStoryboardSegue as parameter in view controller that you want to unwind to.
+    //Control drag from unwind button to exit button on storboard.
+    // Select unwind method.
+    @IBAction func unwindToRed(_ sender: UIStoryboardSegue) {
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
 }
+
